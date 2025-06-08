@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love You </title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <audio id="love-audio" autoplay loop hidden>
+  <source src=".mp3" type="audio/mpeg">
+</audio>
+
+<main>
+  <section>
+    <div>
+      <h1>Dành cho em</h1>
+      <canvas id="canvas"></canvas>
+      <h2>Người anh yêu!</h2>
+      <p id='arrow'>&raquo;</p>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <div class="love-blur">
+        Vài điều anh muốn gửi đến em<br> Tên người yêu!
+        <br><br>
+        <a href="totinh.png" download>
+          <button id="downloadBtn">Hãy Click Vào Đây 💌</button>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Import map để load thư viện Three.js từ CDN -->
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.154.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.154.0/examples/jsm/",
+      "three-mesh-bvh": "https://unpkg.com/three-mesh-bvh@0.6.0/build/index.module.js",
+      "three-bvh-csg": "https://unpkg.com/three-bvh-csg@0.0.7/build/index.module.js"
+    }
+  }
+</script>
+<!-- Script chính -->
+<script type="module" src="./script.js"></script>
+</body>
+</html>
